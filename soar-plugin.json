@@ -19,5 +19,8 @@
   },
   "bundleAssets": [
     "assets/MaterialCommunityIcons.ttf"
+  ],
+  "soarSources": [
+    "soar/MaterialCommunityIcon.soar"
   ]
 }
