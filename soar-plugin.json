@@ -1,0 +1,23 @@
+{
+  "name": "material-community-icons",
+  "version": "0.1.0",
+  "description": "Material Community icon font and glyph name lookup.",
+  "modules": [
+    "materialCommunityIcons"
+  ],
+  "declarations": "material-community-icons.d.ts",
+  "android": {
+    "sources": "android/src",
+    "module": "dev.soar.plugins.materialicons.MaterialIconsModule"
+  },
+  "ios": {
+    "sources": "ios/Sources",
+    "module": "MaterialIconsModule"
+  },
+  "desktop": {
+    "stub": "desktop/stub.rs"
+  },
+  "bundleAssets": [
+    "assets/MaterialCommunityIcons.ttf"
+  ]
+}
