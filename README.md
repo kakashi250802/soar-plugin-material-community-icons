@@ -8,7 +8,7 @@ The plugin's source code is licensed under the MIT License in `LICENSE`. The bun
 
 This plugin depends on **unreleased Soar core changes**: the v90 reserved pure `native:format.lookupStringTable` function and compiler support for `bundleAssets` at `soar-plugin-assets/<plugin-name>/<path>` and `soarSources` imports using `@plugin/`. A host and compiler without these changes cannot build or run the included component. The old `native:format.materialCommunityGlyph` v85 builtin is a separate legacy API and its compatibility migration is not implemented. Do not remove it or publish an OTA that assumes it has moved to this plugin.
 
-The component supports `name`, `size`, `color`, and a `style` override. Style size and color take precedence, while the icon font and normal weight remain fixed. Full Expo style forwarding, nested text inheritance, accessibility and font scaling have not been established. It has not been verified on Android or iOS devices. Use it only where the Material Community family is the intended source, and retain any app-specific SVG assets where those are required.
+The component supports `name`, `size`, `color`, a `style` override, `accessibilityLabel`, and `accessibilityRole`. Style size and color take precedence, while the icon font and normal weight remain fixed. Explicit accessibility labels and roles are covered by a synthetic Soar semantics test; native screen readers, full Expo style forwarding, nested text inheritance and font scaling have not been established. It has not been verified on Android or iOS devices. Use it only where the Material Community family is the intended source, and retain any app-specific SVG assets where those are required.
 
 ## Installation
 
